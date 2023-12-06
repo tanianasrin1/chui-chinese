@@ -2,26 +2,161 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+
+html,
+body {
+  max-width: 100vw;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+text,
+input,
+textarea,
+p,
+span {
+  
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* -------container size------------- */
+.container-sk {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+@media (min-width: 768px) {
+  .container-sk {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-sk {
+    width: 960px;
+  }
+  
+}
+@media (min-width: 1200px) {
+  .container-sk {
+    width: 1140px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+@media (min-width: 1400px) {
+  .container-sk {
+    width: 1320px;
+  }
+}
+
+/* ripple effect  */
+
+.ripple {
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.ripple:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform 0.5s, opacity 1s;
+}
+
+.ripple:active:after {
+  transform: scale(0, 0);
+  opacity: 0.3;
+  transition: 0s;
+}
+
+/* ripple effect classes end  */
+
+/* map */
+.responsive-map{
+  overflow: hidden;
+  padding-bottom:0%;
+  position:relative;
+  height: 600px;
+  
+  }
+  .responsive-map iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  }
+
+
+.common-bg{
+  padding-left: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #F1B209;
+  
+}
+
+  
+/* modifying carousel classes globally  */
+
+.carousel-root .carousel-slider .control-dots .dot {
+  box-shadow: none;
+  background-color: #303030;
+}
+
+.carousel-root .carousel-slider .control-dots .selected {
+  box-shadow: none;
+  background-color: #004e7f;
+}
+
+/* scrollbar */
+
+body{
+  scroll-behavior: smooth !important;
+}
+
+
+body::-webkit-scrollbar-track {
+  background-color: #FCF9F1 !important;
+ 
+}
+
+body::-webkit-scrollbar {
+ 
+  width: 8px;
+  background-color: #2d3192 !important;
+}
+
+
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color:#2d3192 !important;
+
+ 
 }
