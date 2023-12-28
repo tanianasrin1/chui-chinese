@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
         <Navbar />
       </header>
 
-      <main className="mt-6">{children}</main>
+      <main className="mt-24">{children}</main>
 
       <footer>
         <Footer />
