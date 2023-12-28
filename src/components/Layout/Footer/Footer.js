@@ -1,25 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
+import FooterLogo from "./FooterLogo";
 
-const Footer = () => {
-    return (
-        <div className="bg-blue-primary lg:pt-20 md:pt-16 pt-10 lg:pb-4 md:pb-4 pb-2 select-none">
+const Footer = ({siteSetting}) => {
+  
+
+  return (
+    <>
+      <div className="bg-primary text-white lg:py-20 md:pt-16 pt-10 lg:pb-0 ">
         <div className="container-sk ">
-        
-         
+          <FooterLogo siteSetting={siteSetting} />
         </div>
-        <div className="w-full border-t-4 border-white/10 py-6 text-center mt-24">
-          <h3 className="text-xs tracking-[0.1em] ">
+
+        <div className="w-full  text-center text-white  lg:text-base text-sm  ">
           
-            <span>
-            {/* {data && <p>{data?.data?.copyright}</p>} */}
-              ©2023 All rights Reserved to - Ali Zahir Ashraf & Co. Developed by
-              BUYONIASOFT.
-            </span>
-          </h3>
+          <div className="py-4  container-sk border-t flex md:flex-row flex-col text-center justify-between items-center  gap-2 tracking-wide">
+            <span> Copyright © 2023 TsT. All Rights Reserved</span>
+            {/* {<p>{siteSetting?.data?.copyright}</p>} */}
+
+            <a href="https://buyoniasoft.com/" target="_blank" rel="noreferrer">
+              <span>
+                Developed by
+                <span className="text-white hover:text-red-600 duration-300 px-2">
+                  Buyonia Limited
+                </span>
+              </span>
+            </a>
+          </div>
         </div>
       </div>
-  
-    );
+    </>
+  );
 };
 
 export default Footer;
