@@ -1,12 +1,15 @@
-import About from '@/components/About/About';
-import React from 'react';
+import About from "@/components/About/About";
+import Layout from "@/components/Layout/Layout";
+import React from "react";
 
 const index = () => {
-    return (
-        <>
-          <About/>  
-        </>
-    );
+  return (
+    <>
+      <Layout>
+        <About />
+      </Layout>
+    </>
+  );
 };
 
 export default index;

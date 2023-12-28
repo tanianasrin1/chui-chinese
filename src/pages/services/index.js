@@ -1,12 +1,15 @@
-import Services from '@/components/Services/Services';
-import React from 'react';
+import Layout from "@/components/Layout/Layout";
+import Services from "@/components/Services/Services";
+import React from "react";
 
 const index = () => {
-    return (
-        <>
-            <Services/>
-        </>
-    );
+  return (
+    <>
+      <Layout>
+        <Services />
+      </Layout>
+    </>
+  );
 };
 
 export default index;
