@@ -40,8 +40,8 @@ const Links = () => {
       <div className="">
         {" "}
         <Link
-          className={`${pathname === "/#about" && "text-primary font-semibold"} text-lg   hover:text-primary `}
-          href="/#about"
+          className={`${pathname === "/about" && "text-primary font-semibold"} text-lg   hover:text-primary `}
+          href="/about"
         >
           About Us
         </Link>
@@ -50,10 +50,19 @@ const Links = () => {
      
       <div className="">
         <Link
-          className={`${pathname === "/packages" && "text-primary font-semibold"} text-lg   hover:text-primary `}
-          href="/packages"
+          className={`${pathname === "/services" && "text-primary font-semibold"} text-lg   hover:text-primary `}
+          href="/services"
         >
-          Packages
+          Services
+        </Link>
+      </div>
+
+      <div className="">
+        <Link
+          className={`${pathname === "/project" && "text-primary font-semibold"} text-lg   hover:text-primary `}
+          href="/project"
+        >
+          Project
         </Link>
       </div>
       
