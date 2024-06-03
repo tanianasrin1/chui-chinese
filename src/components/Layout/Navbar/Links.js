@@ -59,6 +59,15 @@ const Links = () => {
 
       <div className="">
         <Link
+          className={`${pathname === "/blogs" && "text-primary font-semibold"} text-lg   hover:text-primary `}
+          href="/blogs"
+        >
+          Blogs 
+        </Link>
+      </div>
+
+      <div className="">
+        <Link
           className={`${pathname === "/projects" && "text-primary font-semibold"} text-lg   hover:text-primary `}
           href="/projects"
         >
