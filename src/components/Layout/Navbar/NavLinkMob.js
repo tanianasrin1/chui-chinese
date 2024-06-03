@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import { IoMdArrowDropdown } from "react-icons/io";
 import { IoCloseSharp } from "react-icons/io5";
 
 const NavLinkMob = ({ toggleDrawer }) => {
@@ -45,6 +46,29 @@ const NavLinkMob = ({ toggleDrawer }) => {
             Services
           </Link>
         </div> */}
+
+        <div className="w-24 relative group  bg-white">
+          <div className="flex items-center hover:text-red-10 cursor-pointer">
+            <p className="  mr-1">Services</p>
+            <IoMdArrowDropdown />
+          </div>
+
+          <div className="w-44 absolute hidden bg-white border  p-2  group-hover:flex flex-col  space-y-3 divide-gray-400 pt-4">
+            <Link href="/">
+              <p className="hover:text-red-10 cursor-pointer">
+                {" "}
+                &nbsp;Member&apos;s&nbsp;Directory&nbsp;
+              </p>
+            </Link>
+
+            <Link href="/practice-directory">
+              <p className="hover:text-red-10 cursor-pointer">
+                {" "}
+                &nbsp;Practice&nbsp;Directory&nbsp;
+              </p>
+            </Link>
+          </div>
+        </div>
         <div className="">
           <Link
             className={`${
@@ -55,7 +79,7 @@ const NavLinkMob = ({ toggleDrawer }) => {
             Package
           </Link>
         </div>
-        
+
         <div className="">
           <Link
             className={`${
