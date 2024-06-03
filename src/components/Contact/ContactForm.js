@@ -11,9 +11,7 @@ const ContactForm = () => {
     
         try {
           const res = await axios.post(
-            // `${process.env.NEXT_PUBLIC_API_URL}/api/enquiries11`,
             `${process.env.NEXT_PUBLIC_API_URL}/api/enquiries`,
-            // `https://portal.trendsettersbd.com/api/enquiries`,
             { email, name, website, phone, message }
           );
           const { status, data } = res;
@@ -65,7 +63,7 @@ const ContactForm = () => {
                           return errors;
                         }}
                         onSubmit={(values, { resetForm }) => {
-                            // submitQuery(values);
+                            submitQuery(values);
                           console.log("test", values);
                           resetForm();
                         }}
