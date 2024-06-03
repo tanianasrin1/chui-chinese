@@ -7,20 +7,19 @@ const NavLogo = () => {
 
   return (
     <div>
-      <Link href="/">
-        <div className="lg:w-[88px] lg:h-[65px] w-[69px] h-[48px] relative">
+      <Link href="/" className="w-fit">
           <Image
-            className=""
-            // src={
-            //   `${siteSetting?.data?.logo}?t=${new Date().getTime()}` ||
-            //   "/images/noimage.png"
-            // }
+            placeholder="blur"
+            // src={siteSettings?.data?.logo}
             src="/images/noimage.png"
-            alt="Institution logo"
-            fill
+            width={100}
+            height={80}
+            alt="logo"
+            className="object-contain h-20 w-fit md:h-[85px]  my-auto"
+            blurDataURL="/blur.png "
+            loading="eager"
           />
-        </div>
-      </Link>
+        </Link>
     </div>
   );
 };

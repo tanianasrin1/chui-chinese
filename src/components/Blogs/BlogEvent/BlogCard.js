@@ -7,7 +7,7 @@ const BlogCard = () => {
     <div className="lg:w-[330px] bg-white w-full rounded-xl shadow-xl ">
       <div >
         <Image
-          className="rounded-t-lg"
+          className="rounded-t-lg rounded-xl object-contain"
           src="/images/noimage.png"
           // src={ item?.thumbnail ?
           //   `${item?.thumbnail}?t=${new Date().getTime()}` :
@@ -20,7 +20,7 @@ const BlogCard = () => {
         />
       </div>
 
-      <div className="lg:w-[410px] bg-white w-full rounded-xl py-5 px-4">
+      <div className="lg:w-[330px] bg-white w-full rounded-xl py-5 px-4">
         {/* <p className="mb-3 text-black-600">{item?.published_at}</p> */}
         <p className="mb-3 text-black-600">15 Jan 2024</p>
         <p className="lg:text-[32px] md:text-3xl text-2xl font-semibold text-dark-blue">

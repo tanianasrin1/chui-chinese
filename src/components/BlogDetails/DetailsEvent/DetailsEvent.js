@@ -8,11 +8,11 @@ const DetailsEvent = ({ data, recentBlog }) => {
       <div className="min-h-[72vh]   ">
         <div className="container-sk py-8 md:py-14">
           <p className="lg:text-[32px] md:text-3xl text-2xl font-semibold text-secondary ">
-            Explore Our
+           Blogs Details
           </p>
-          <p className="lg:text-[72px]  lg:leading-[82px] w-full md:text-6xl text-5xl text-black font-medium mt-2">
+          {/* <p className="lg:text-[72px]  lg:leading-[82px] w-full md:text-6xl text-5xl text-black font-medium mt-2">
             Blog & Events
-          </p>
+          </p> */}
           <div className="flex lg:flex-row flex-col gap-4 lg:mt-10 mt-5">
             <div className="lg:w-8/12 w-full">
               <div>
@@ -23,7 +23,7 @@ const DetailsEvent = ({ data, recentBlog }) => {
                   //     `${data?.thumbnail}?t=${new Date().getTime()}` :
                   //     "/images/noimage.png"
                   //   }
-                  width={600}
+                  width={800}
                   height={400}
                   alt="Institution logo"
                 />

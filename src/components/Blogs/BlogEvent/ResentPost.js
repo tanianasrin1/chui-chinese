@@ -8,7 +8,7 @@ const ResentPost = () => {
         <div className="lg:w-5/12 w-full">
           <div >
             <Image
-              className="rounded-lg"
+              className="rounded-lg object-contain"
               src="/images/noimage.png"
               //   src={ item?.thumbnail ?
               //     `${item?.thumbnail}?t=${new Date().getTime()}` :
@@ -21,7 +21,7 @@ const ResentPost = () => {
           </div>
         </div>
         <div className=" lg:w-7/12 w-full">
-          <p className="lg:text-2xl md:text-xl truncate text-lg font-medium">
+          <p className="lg:text-xl md:text-lg truncate text-lg font-medium">
             {/* {item?.title} */}
             test
           </p>
