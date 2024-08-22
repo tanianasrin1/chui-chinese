@@ -9,11 +9,11 @@ const Index = ({ siteSetting, socialIcon, data, recentBlog }) => {
   const { slug } = router.query;
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>
           {slug} - {siteSetting?.data?.name}
         </title>
-      </Head>
+      </Head> */}
       <Layout siteSetting={siteSetting} socialIcon={socialIcon}>
         {/* <BlogDetails data={data} recentBlog={recentBlog} /> */}
         <BlogDetails data={data} recentBlog={recentBlog}/>
@@ -22,45 +22,45 @@ const Index = ({ siteSetting, socialIcon, data, recentBlog }) => {
   );
 };
 
-export const getServerSideProps = async (context) => {
-    const { slug } = context.query;
+// export const getServerSideProps = async (context) => {
+//     const { slug } = context.query;
 
-    try {
-      const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/blogs/${slug}`
-      );
+//     try {
+//       const res = await fetch(
+//         `${process.env.NEXT_PUBLIC_API_URL}/api/blogs/${slug}`
+//       );
 
-      const res2 = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/recent-blogs`
-      );
-      const { data } = await res.json();
+//       const res2 = await fetch(
+//         `${process.env.NEXT_PUBLIC_API_URL}/api/recent-blogs`
+//       );
+//       const { data } = await res.json();
 
-      const site = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/site-settings`
-      );
+//       const site = await fetch(
+//         `${process.env.NEXT_PUBLIC_API_URL}/api/site-settings`
+//       );
 
-      const res3 = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/social-links`
-      );
+//       const res3 = await fetch(
+//         `${process.env.NEXT_PUBLIC_API_URL}/api/social-links`
+//       );
 
-      const socialIcon = await res3.json();
-      const recentBlog = await res2.json();
-      const siteSetting = await site.json();
-      return {
-        props: {
-          data,
-          socialIcon,
-          siteSetting,
-          recentBlog,
-        },
-      };
-    } catch (error) {
-      console.error("Error fetching data:", error);
-      return {
-        props: {
-          data: null,
-        },
-      };
-    }
-  };
+//       const socialIcon = await res3.json();
+//       const recentBlog = await res2.json();
+//       const siteSetting = await site.json();
+//       return {
+//         props: {
+//           data,
+//           socialIcon,
+//           siteSetting,
+//           recentBlog,
+//         },
+//       };
+//     } catch (error) {
+//       console.error("Error fetching data:", error);
+//       return {
+//         props: {
+//           data: null,
+//         },
+//       };
+//     }
+//   };
 export default Index;

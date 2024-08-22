@@ -7,10 +7,10 @@ const index = () => {
   // console.log("")
   return (
     <>
-    {/* <Head>
-    <title>Term and Condition - {siteSetting?.data?.name}</title>
-    <link rel="icon" href={siteSetting?.data?.favicon} />
-    </Head> */}
+      {/* <Head>
+        <title>Term and Condition - {siteSetting?.data?.name}</title>
+        <link rel="icon" href={siteSetting?.data?.favicon} />
+      </Head> */}
       <Layout>
         <TermsCondition />
       </Layout>
