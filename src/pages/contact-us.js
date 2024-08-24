@@ -1,6 +1,5 @@
 import Contact from "@/components/Contact/Contact";
 import Layout from "@/components/Layout/Layout";
-import Head from "next/head";
 import React from "react";
 
 const index = () => {
@@ -10,7 +9,7 @@ const index = () => {
         <title>Contact us - {siteSetting?.data?.name}</title>
         <link rel="icon" href={siteSetting?.data?.favicon} />
       </Head> */}
-      <Layout siteSetting={siteSetting}>
+      <Layout >
         <Contact />
       </Layout>
     </>
