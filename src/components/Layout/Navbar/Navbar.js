@@ -26,7 +26,7 @@ const Navbar = () => {
        <NavButton/>
 
         <BiMenu
-          className="lg:hidden block  w-10 ml-auto cursor-pointer text-xl md:text-2xl"
+          className="lg:hidden block  w-10 ml-auto cursor-pointer text-3xl"
           onClick={toggleDrawer}
         />
         <Drawer

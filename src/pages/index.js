@@ -8,10 +8,10 @@ export default function index() {
   return (
     <>
       
-      {/* <Head>
-        <title>{siteSetting?.data?.name}</title>
-        <link rel="icon" href={siteSetting?.data?.favicon} />
-      </Head> */}
+      <Head>
+        {/* <title>{siteSetting?.data?.name}</title>
+        <link rel="icon" href={siteSetting?.data?.favicon} /> */}
+      </Head>
       <Layout>
         <Home />
       </Layout>

@@ -7,7 +7,8 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>Project | </title>
+        {/* <title>Blogs {siteSetting?.data?.name}</title>
+      <link rel="icon" href={siteSetting?.data?.favicon} /> */}
       </Head>
 
       <Layout>

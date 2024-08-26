@@ -14,7 +14,7 @@ const NavButton = () => {
     //   </div>
     // </Link>
 
-    <>
+    <div className="lg:block hidden">
       <div className="flex items-center">
         <div className="w-10 h-10 bg-gray flex justify-center items-center rounded-full ">
           <PhoneInTalkIcon className="text-lg " />
@@ -26,7 +26,7 @@ const NavButton = () => {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

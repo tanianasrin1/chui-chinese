@@ -6,10 +6,10 @@ import Head from "next/head";
 const policy = () => {
   return (
     <>
-      {/* <Head>
-        <title>Privacy-Policy - {siteSetting?.data?.name}</title>
-        <link rel="icon" href={siteSetting?.data?.favicon} />
-      </Head> */}
+      <Head>
+        {/* <title>Privacy-Policy - {siteSetting?.data?.name}</title>
+        <link rel="icon" href={siteSetting?.data?.favicon} /> */}
+      </Head>
       <Layout>
         <Policy />
       </Layout>

@@ -1,5 +1,6 @@
 import Contact from "@/components/Contact/Contact";
 import Layout from "@/components/Layout/Layout";
+import Head from "next/head";
 import React from "react";
 
 const index = () => {

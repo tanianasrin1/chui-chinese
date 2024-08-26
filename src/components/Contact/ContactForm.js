@@ -122,7 +122,7 @@ const ContactForm = () => {
               <button
                 type="submit"
                 // disabled={isLoading}
-                className="ripple bg- rounded w-full px-16 py-3 text-white  font-semibold hover:bg-blue-primary"
+                className="ripple bg-secondary rounded w-full px-16 py-3 text-white  font-semibold hover:bg-blue-primary"
               >
                 Submit
               </button>
