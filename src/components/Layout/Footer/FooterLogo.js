@@ -11,7 +11,7 @@ const FooterLogo = ({ siteSetting }) => {
           // src={siteSettings?.data?.logo}
           src="/images/Logo-02.jpg"
           width={500}
-          height={500}
+          height={100}
           alt="logo"
           className="object-contain  lg:h-[85px]  md:h-[55px]  h-[45px] my-auto w-fit"
           blurDataURL="/blur.png "

@@ -16,18 +16,7 @@ const Links = () => {
 
   const router = useRouter();
 
-  useEffect(() => {
-    setTimeout(() => {
-      // Check if the URL contains the parameter #request_callback
-      if (router.asPath.includes("#about")) {
-        // Scroll to the element with the id "request_callback"
-        const element = document.getElementById("about");
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      }
-    }, [300]);
-  }, [router.asPath]);
+
 
   return (
     <div className="w-8/12 lg:flex items-center text-secondary justify-center gap-x-[15px] font-Barlow  text-sm lg:text-base  leading-5 tracking-[1%] hidden ">
@@ -38,11 +27,11 @@ const Links = () => {
       <Link href="/about">
         <Button className={`w-max ${router.pathname == "/about" && 'font-bold'} text-secondary text-sm lg:text-base   capitalize`}>About Us</Button>
       </Link>
-      <Link href="/">
-        <Button className={`w-max ${router.pathname == "/about-us" && 'font-bold'} text-secondary text-sm lg:text-base   capitalize`}>Our Menu</Button>
+      <Link href="/our-menu">
+        <Button className={`w-max ${router.pathname == "/our-menu" && 'font-bold'} text-secondary text-sm lg:text-base   capitalize`}>Our Menu</Button>
       </Link>
-      <Link href="/">
-        <Button className={`w-max ${router.pathname == "/about-us" && 'font-bold'} text-secondary text-sm lg:text-base   capitalize`}>Offer</Button>
+      <Link href="/offer">
+        <Button className={`w-max ${router.pathname == "/offer" && 'font-bold'} text-secondary text-sm lg:text-base   capitalize`}>Offer</Button>
       </Link>
       <Link href="/contact-us">
         <Button className={`w-max ${router.pathname == "/contact-us" && 'font-bold'} text-secondary text-sm lg:text-base   capitalize`}>Contact Us</Button>

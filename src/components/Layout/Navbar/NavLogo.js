@@ -15,7 +15,7 @@ const NavLogo = () => {
             width={100}
             height={80}
             alt="logo"
-            className="object-contain h-20 w-fit md:h-[85px]  my-auto"
+            className="object-contain h-10 w-fit md:h-[85px]  my-auto"
             blurDataURL="/blur.png "
             loading="eager"
           />

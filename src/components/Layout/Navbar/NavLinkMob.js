@@ -1,11 +1,14 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
-import { IoMdArrowDropdown } from "react-icons/io";
 import { IoCloseSharp } from "react-icons/io5";
+import { useRouter } from "next/router";
+import { Button } from "@mui/material";
 
 const NavLinkMob = ({ toggleDrawer }) => {
   const pathname = usePathname();
+  const router = useRouter();
+
   return (
     <div className="font-Barlow text-base leading-5 tracking-[1%] p-6">
       <IoCloseSharp
@@ -13,83 +16,60 @@ const NavLinkMob = ({ toggleDrawer }) => {
         onClick={toggleDrawer}
       />
       {/* border-b border-gray/75 */}
-      <div className="space-y-4">
-        <div className="">
-          <Link
-            className={`${
-              pathname === "/" && "text-primary font-semibold"
-            } text-base   hover:text-primary `}
-            href="/"
+      <div>
+        <Link href="/">
+          <Button
+            className={`w-max ${
+              router.pathname == "/" && "font-bold"
+            } text-secondary text-sm lg:text-base   capitalize`}
           >
             Home
-          </Link>
-        </div>
-        <div className="">
-          {" "}
-          <Link
-            className={`${
-              pathname === "#about" && "text-primary font-semibold"
-            } text-base   hover:text-primary `}
-            href="#about"
+          </Button>
+        </Link>
+      </div>
+      <div>
+        <Link href="/about">
+          <Button
+            className={`w-max ${
+              router.pathname == "/about" && "font-bold"
+            } text-secondary text-sm lg:text-base   capitalize`}
           >
             About Us
-          </Link>
-        </div>
-
-        {/* <div className="">
-          <Link
-            className={`${
-              pathname === "/services" && "text-primary font-semibold"
-            } text-base   hover:text-primary `}
-            href="/services"
+          </Button>
+        </Link>
+      </div>
+      <div>
+        <Link href="/our-menu">
+          <Button
+            className={`w-max ${
+              router.pathname == "/our-menu" && "font-bold"
+            } text-secondary text-sm lg:text-base   capitalize`}
           >
-            Services
-          </Link>
-        </div> */}
-
-        <div className="w-24 relative group  bg-white">
-          <div className="flex items-center hover:text-red-10 cursor-pointer">
-            <p className="  mr-1">Services</p>
-            <IoMdArrowDropdown />
-          </div>
-
-          <div className="w-44 absolute hidden bg-white border  p-2  group-hover:flex flex-col  space-y-3 divide-gray-400 pt-4">
-            <Link href="/">
-              <p className="hover:text-red-10 cursor-pointer">
-                {" "}
-                &nbsp;Member&apos;s&nbsp;Directory&nbsp;
-              </p>
-            </Link>
-
-            <Link href="/practice-directory">
-              <p className="hover:text-red-10 cursor-pointer">
-                {" "}
-                &nbsp;Practice&nbsp;Directory&nbsp;
-              </p>
-            </Link>
-          </div>
-        </div>
-        <div className="">
-          <Link
-            className={`${
-              pathname === "/packages" && "text-primary font-semibold"
-            } text-base   hover:text-primary `}
-            href="/packages"
+            Our Menu
+          </Button>
+        </Link>
+      </div>
+      <div>
+        <Link href="/offer">
+          <Button
+            className={`w-max ${
+              router.pathname == "/offer" && "font-bold"
+            } text-secondary text-sm lg:text-base   capitalize`}
           >
-            Package
-          </Link>
-        </div>
-
-        <div className="">
-          <Link
-            className={`${
-              pathname === "/contact-us" && "text-primary font-semibold"
-            } text-base   hover:text-primary `}
-            href="/contact-us"
+            Offer
+          </Button>
+        </Link>
+      </div>
+      <div>
+        <Link href="/contact-us">
+          <Button
+            className={`w-max ${
+              router.pathname == "/contact-us" && "font-bold"
+            } text-secondary text-sm lg:text-base   capitalize`}
           >
-            Contact us
-          </Link>
-        </div>
+            Contact Us
+          </Button>
+        </Link>
       </div>
     </div>
   );
