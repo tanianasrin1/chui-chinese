@@ -2,6 +2,7 @@ import React from "react";
 import HomeHero from "./HomeHero";
 import Categories from "./Categories";
 import Location from "./Location";
+import Visite from "./Visite";
 
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
     <>
     <HomeHero/>
     <Categories/>
+    <Visite/>
     <Location/>
     </>
   );
