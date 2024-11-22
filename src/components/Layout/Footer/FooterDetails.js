@@ -14,7 +14,7 @@ const FooterDetails = () => {
         <div>
           <Link
             href="/"
-            className="w-max cursor-pointer  hover:underline hover:text-white"
+            className="w-max cursor-pointer  hover:font-semibold"
           >
             <span className="  ">Home</span>
           </Link>
@@ -22,18 +22,26 @@ const FooterDetails = () => {
 
         <div>
           <Link
-            href="#about"
-            className="w-max cursor-pointer  hover:underline hover:text-white"
+            href="/about-us"
+            className="w-max cursor-pointer  hover:font-semibold"
           >
             <span className="   ">About Us</span>
           </Link>
         </div>
         <div>
           <Link
-            href="/packages"
-            className="w-max cursor-pointer  hover:underline hover:text-white"
+            href="/our-menu"
+            className="w-max cursor-pointer  hover:font-semibold"
           >
-            <span className="   ">Packages</span>
+            <span className="   ">Our Menu</span>
+          </Link>
+        </div>
+        <div>
+          <Link
+            href="/contact-us"
+            className="w-max cursor-pointer  hover:font-semibold"
+          >
+            <span className="   ">Contact Us</span>
           </Link>
         </div>
       </div>

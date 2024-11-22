@@ -37,7 +37,7 @@ const ContactContent = () => {
                       {/* <a href={`tel:${siteSetting?.data?.phone}`}> */}
                       <a href={`tel: +99 (786) 8765`}>
                         {/* {siteSetting?.data?.phone} */}
-                        +99 (786) 8765
+                        01728585985
                       </a>{" "}
                     </span>
                   </div>
@@ -52,7 +52,7 @@ const ContactContent = () => {
                     <span className="text-gray-secondary">
                       {" "}
                       {/* <a href={`tel:${siteSetting?.data?.email}`}> */}
-                      <a href={`tel:info@gmail.com`}>info@gmail.com</a>{" "}
+                      <a href={`tel:info@gmail.com`}>chui.chinese85@gmail.com</a>{" "}
                     </span>
                   </div>
                 </div>
@@ -64,8 +64,8 @@ const ContactContent = () => {
                   <div className="ms-3">
                     <p className="text-xl font-bold text-primary ">Address</p>
                     <span className="text-gray-secondary">
-                      {/* {siteSetting?.data?.address} */}
-                      Corporate Head Quarter
+                      
+                      95/B, Sukrabad, Dhanmondi 32, Dhaka-1205
                     </span>
                   </div>
                 </div>
