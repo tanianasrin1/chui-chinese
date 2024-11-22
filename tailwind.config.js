@@ -4,18 +4,20 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "img-none": "none",
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        "primary": "#c8d33c",
-        "secondary": "",
+        "primary": "#fdd201",
+        "secondary": "#211b00",
         "black": "#333333",
-        "gray": "#868585",
+        "green": "#eef7ff",
         "gray-bg": "#f3f5fa",
         "black-theme": "#111111",   
       },
       fontFamily: {
-        Barlow: ["Open Sans", "sans-serif"],
+        sans: ["Work Sans", "sans-serif"],
       },
       fontWeight: {
         lighter: "lighter",

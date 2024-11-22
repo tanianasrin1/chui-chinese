@@ -9,7 +9,7 @@ const FooterLogo = ({ siteSetting }) => {
         <Image
           placeholder="blur"
           // src={siteSettings?.data?.logo}
-          src="/images/noimage.png"
+          src="/images/Logo-02.jpg"
           width={500}
           height={500}
           alt="logo"
@@ -17,7 +17,7 @@ const FooterLogo = ({ siteSetting }) => {
           blurDataURL="/blur.png "
         />
 
-        <p className="  text-white lg:text-lg md:text-base text-sm my-8">
+        <p className="  text-secondary lg:text-base md:text-base text-sm my-8">
           {/* {siteSetting?.data?.description} */}
           Our courses cover everything from the fundamentals of driving to
           advanced techniques. You ll leave our school with the knowledge and

@@ -3,13 +3,15 @@ import React from "react";
 
 const CarouselSlider = () => {
   return (
-    <div>
+    <div className="flex items-center h-full">
       <Image
-        src="/images/noimage.png"
-        alt="picture"
-        width={450}
-        height={200}
-        className=" lg:h-40 md:h-36 h-28 object-contain rounded-2xl"
+        placeholder="blur"
+        src="/images/banner1.png"
+        width={500}
+        height={500}
+        alt="Picture of the author"
+        blurDataURL="/blur.png"
+        className="object-contain w-full h-72 pointer-events-none my-auto"
       />
     </div>
   );

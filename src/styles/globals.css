@@ -15,21 +15,7 @@ body {
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-text,
-input,
-textarea,
-p,
-span {
-  
-  font-family: 'Open Sans', sans-serif;
-  font-optical-sizing: auto;
-}
+
 
 /* -------container size------------- */
 .container-sk {
@@ -60,6 +46,12 @@ span {
 @media (min-width: 1400px) {
   .container-sk {
     width: 1320px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .container-sk {
+    width: 1550px;
   }
 }
 
@@ -126,37 +118,29 @@ span {
 
 .carousel-root .carousel-slider .control-dots .dot {
   box-shadow: none;
-  background-color: #303030;
+  background-color: #fdd201;
 }
 
 .carousel-root .carousel-slider .control-dots .selected {
   box-shadow: none;
-  background-color: #004e7f;
+  background-color: #fdd201;
 }
 
 /* scrollbar */
 
-body{
-  scroll-behavior: smooth !important;
+body::-webkit-scrollbar {
+  width: 14px;
 }
-
 
 body::-webkit-scrollbar-track {
-  background-color: #FCF9F1 !important;
- 
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid white;
 }
-
-body::-webkit-scrollbar {
- 
-  width: 8px;
-  background-color: #2d3192 !important;
-}
-
-
 
 body::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color:#2d3192 !important;
-
- 
+  border-radius: 8px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+  @apply bg-primary;
 }

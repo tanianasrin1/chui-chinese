@@ -5,6 +5,7 @@ import "react-modern-drawer/dist/index.css";
 import { usePathname } from "next/navigation";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { useRouter } from "next/router";
+import { Button } from "@mui/material";
 
 const Links = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -29,93 +30,27 @@ const Links = () => {
   }, [router.asPath]);
 
   return (
-    <div className="w-8/12 lg:flex items-center justify-center gap-x-[25px] font-Barlow text-lg  leading-5 tracking-[1%] hidden ">
-      <div className="">
-        <Link
-          className={`${
-            pathname === "/" && "text-primary font-semibold"
-          } text-lg   hover:text-primary `}
-          href="/"
-        >
-          Home
-        </Link>
-      </div>
-      <div className="">
-        {" "}
-        <Link
-          className={`${
-            pathname === "/about" && "text-primary font-semibold"
-          } text-lg   hover:text-primary `}
-          href="/about"
-        >
-          About Us
-        </Link>
-      </div>
+    <div className="w-8/12 lg:flex items-center text-secondary justify-center gap-x-[15px] font-Barlow  text-sm lg:text-base  leading-5 tracking-[1%] hidden ">
+      
+      <Link href="/">
+        <Button className={`w-max ${router.pathname == "/" && 'font-bold'} text-secondary text-sm lg:text-base   capitalize`}>Home</Button>
+      </Link>
+      <Link href="/">
+        <Button className={`w-max ${router.pathname == "/about-us" && 'font-bold'} text-secondary text-sm lg:text-base   capitalize`}>About Us</Button>
+      </Link>
+      <Link href="/">
+        <Button className={`w-max ${router.pathname == "/about-us" && 'font-bold'} text-secondary text-sm lg:text-base   capitalize`}>Our Menu</Button>
+      </Link>
+      <Link href="/">
+        <Button className={`w-max ${router.pathname == "/about-us" && 'font-bold'} text-secondary text-sm lg:text-base   capitalize`}>Offer</Button>
+      </Link>
+      <Link href="/">
+        <Button className={`w-max ${router.pathname == "/about-us" && 'font-bold'} text-secondary text-sm lg:text-base   capitalize`}>Contact Us</Button>
+      </Link>
+      
+      
+      
 
-      {/* <div className="">
-        <Link
-          className={`${pathname === "/services" && "text-primary font-semibold"} text-lg   hover:text-primary `}
-          href="/services"
-        >
-          Services
-        </Link>
-      </div> */}
-
-      <div className="w-24 relative group  bg-white">
-        <div className="flex items-center hover:text-red-10 cursor-pointer">
-          <p className="  mr-1">Services</p>
-          <IoMdArrowDropdown />
-        </div>
-        
-        <div className="w-44 absolute hidden bg-white border  p-2  group-hover:flex flex-col  space-y-3 divide-gray-400 pt-4">
-          <Link href="/">
-            <p className="hover:text-red-10 cursor-pointer">
-              {" "}
-              &nbsp;Member&apos;s&nbsp;Directory&nbsp;
-            </p>
-          </Link>
-
-          <Link href="/practice-directory">
-            <p className="hover:text-red-10 cursor-pointer">
-              {" "}
-              &nbsp;Practice&nbsp;Directory&nbsp;
-            </p>
-          </Link>
-        </div>
-      </div>
-
-      <div className="">
-        <Link
-          className={`${
-            pathname === "/blogs" && "text-primary font-semibold"
-          } text-lg   hover:text-primary `}
-          href="/blogs"
-        >
-          Blogs
-        </Link>
-      </div>
-
-      <div className="">
-        <Link
-          className={`${
-            pathname === "/projects" && "text-primary font-semibold"
-          } text-lg   hover:text-primary `}
-          href="/projects"
-        >
-          Project
-        </Link>
-      </div>
-
-      <div className="">
-        <Link
-          className={`${
-            pathname === "/contact-us" && "text-primary font-semibold"
-          } text-lg   hover:text-primary `}
-          href="/contact-us"
-        >
-          Contact us
-        </Link>
-      </div>
     </div>
   );
 };

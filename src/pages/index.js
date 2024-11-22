@@ -9,8 +9,9 @@ export default function index() {
     <>
       
       <Head>
-        {/* <title>{siteSetting?.data?.name}</title>
-        <link rel="icon" href={siteSetting?.data?.favicon} /> */}
+        <title>Chui & Chinese</title>
+        {/* <title>{siteSetting?.data?.name}</title> */}
+        {/* <link rel="icon" href={siteSetting?.data?.favicon} /> */}
       </Head>
       <Layout>
         <Home />

@@ -5,21 +5,21 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import useWindowSize from "@/hook/useWindowSize";
-import PopularSlider from "./PopularSlider";
 import CarouselSlider from "./CarouselSlider";
+import useWindowSize from "@/hooks/useWindowSize";
+
 const PopularCarousel = () => {
   const windowSize = useWindowSize();
   const [count, setCount] = useState(1);
   useEffect(() => {
     if (windowSize?.width < 450) {
-      setCount(2);
+      setCount(1);
     } else if (windowSize?.width < 850) {
-      setCount(2);
+      setCount(1);
     } else if (windowSize?.width < 1024) {
-      setCount(3);
+      setCount(1);
     } else {
-      setCount(3);
+      setCount(1);
     }
   }, [windowSize]);
 
@@ -29,36 +29,26 @@ const PopularCarousel = () => {
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={20}
         slidesPerView={count}
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 4000 }}
-        className=" lg:h-[200px] md:h-[200px] h-[180px] lg:my-10 my-6"
+        // pagination={{ clickable: true }}
+        // dotListClassName="custom-dot-list-style"
+        autoplay={{ delay: 3000 }}
+        className=" lg:h-[400px] md:h-[200px] h-[180px] lg:my-10 my-6"
       >
         <>
-          {/* { listArea?.data.length > 0 && listArea?.data?.map(
-          (item, index) =>
-            
-              <>
-                <SwiperSlide>
-                  <PopularSlider key={index} item={item} />
-                </SwiperSlide>
-              </>
-           
-        )} */}
-
           <SwiperSlide>
-            <CarouselSlider/>
+            <CarouselSlider />
           </SwiperSlide>
           <SwiperSlide>
-            <CarouselSlider/>
+            <CarouselSlider />
           </SwiperSlide>
           <SwiperSlide>
-            <CarouselSlider/>
+            <CarouselSlider />
           </SwiperSlide>
           <SwiperSlide>
-            <CarouselSlider/>
+            <CarouselSlider />
           </SwiperSlide>
           <SwiperSlide>
-            <CarouselSlider/>
+            <CarouselSlider />
           </SwiperSlide>
         </>
       </Swiper>
