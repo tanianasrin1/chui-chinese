@@ -35,8 +35,8 @@ const Links = () => {
       <Link href="/">
         <Button className={`w-max ${router.pathname == "/" && 'font-bold'} text-secondary text-sm lg:text-base   capitalize`}>Home</Button>
       </Link>
-      <Link href="/">
-        <Button className={`w-max ${router.pathname == "/about-us" && 'font-bold'} text-secondary text-sm lg:text-base   capitalize`}>About Us</Button>
+      <Link href="/about">
+        <Button className={`w-max ${router.pathname == "/about" && 'font-bold'} text-secondary text-sm lg:text-base   capitalize`}>About Us</Button>
       </Link>
       <Link href="/">
         <Button className={`w-max ${router.pathname == "/about-us" && 'font-bold'} text-secondary text-sm lg:text-base   capitalize`}>Our Menu</Button>

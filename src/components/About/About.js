@@ -1,13 +1,11 @@
 import React from 'react';
+import AboutBanner from './AboutBanner';
 
 const About = () => {
     return (
-        <div className='lg:py-14 md:py-10 py-10'>
-            <div className='container-sk'>
-                <p className='text-center'>About page</p>
-
-            </div>
-            
+        <div>
+           
+            <AboutBanner/>
             
         </div>
     );

@@ -6,10 +6,10 @@ import React from "react";
 const index = () => {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>About - {siteSetting?.data?.name}</title>
         <link rel="icon" href={siteSetting?.data?.favicon} />
-      </Head>
+      </Head> */}
       <Layout>
         <About />
       </Layout>
