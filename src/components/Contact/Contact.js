@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <>
     <ContactContent/>
-    <ContactMap/>
+    {/* <ContactMap/> */}
 
     </>
   );

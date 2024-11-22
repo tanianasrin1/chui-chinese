@@ -4,21 +4,21 @@ import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineMail } from "react-icons/md";
 import { SlLocationPin } from "react-icons/sl";
 
-const ContactContent = () => {
+const ContactContent = () => { 
   return (
-    <div className="lg:py-20 md:py-16 py-10">
+    <div className="lg:py-20 md:py-16 py-10 lg:mt-10 mt-20">
       <div className="container-sk">
         <p className="lg:text-4xl md:text-3xl text-2xl font-bold text-center lg:mb-8 mb-6">
           Contact Us
         </p>
 
-        <div className="flex lg:flex-row flex-col items-center gap-10">
+        <div className="flex lg:flex-row flex-col items-center lg:gap-20 gap-10">
           <div className="lg:w-1/2 w-full">
             <ContactForm />
           </div>
           <div className="lg:w-1/2 w-full">
             <div className="">
-              <p className=" text-primary  lg:text-3xl md:text-2xl text-xl font-bold">
+              <p className=" text-secondary  lg:text-3xl md:text-2xl text-xl font-bold">
                 Contact Us
               </p>
               {/* <div className="lg:mt-5 mt-3">

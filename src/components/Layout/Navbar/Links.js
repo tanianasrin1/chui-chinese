@@ -44,8 +44,8 @@ const Links = () => {
       <Link href="/">
         <Button className={`w-max ${router.pathname == "/about-us" && 'font-bold'} text-secondary text-sm lg:text-base   capitalize`}>Offer</Button>
       </Link>
-      <Link href="/">
-        <Button className={`w-max ${router.pathname == "/about-us" && 'font-bold'} text-secondary text-sm lg:text-base   capitalize`}>Contact Us</Button>
+      <Link href="/contact-us">
+        <Button className={`w-max ${router.pathname == "/contact-us" && 'font-bold'} text-secondary text-sm lg:text-base   capitalize`}>Contact Us</Button>
       </Link>
       
       

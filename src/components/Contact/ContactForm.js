@@ -27,7 +27,7 @@ const ContactForm = () => {
   };
   return (
     <div className="">
-      <div className=" bg-primary px-8 py-12 rounded-lg lg:-translate-x-16">
+      <div className=" bg-primary px-8 py-12 rounded-lg ">
         <h2 className="lg:text-2xl md:text-xl text-lg  mb-8 font-bold text-center">
           Get In Touch
         </h2>
@@ -83,7 +83,7 @@ const ContactForm = () => {
               <div className="w-full">
                 <input
                   type="text"
-                  className="outline-none border-[1px] rounded border-white bg-transparent w-full p-3 text-white  text-sm "
+                  className="outline-none border-[1px] rounded border-white bg-transparent placeholder-white w-full p-3 text-white  text-sm "
                   placeholder="Full Name"
                   name="name"
                   onChange={handleChange}
@@ -98,7 +98,7 @@ const ContactForm = () => {
               <div className="w-full">
                 <input
                   type="email"
-                  className="outline-none border-[1px] rounded border-white bg-transparent w-full p-3 text-white  text-sm "
+                  className="outline-none border-[1px] rounded border-white placeholder-white bg-transparent w-full p-3 text-white  text-sm "
                   placeholder="Email Address"
                   name="email"
                   onChange={handleChange}
@@ -115,7 +115,7 @@ const ContactForm = () => {
                   type="text"
                   name="message"
                   placeholder="Your Message"
-                  className="outline-none border-[1px] rounded border-white bg-transparent w-full p-3 text-white  text-sm h-[120px]"
+                  className="outline-none border-[1px] rounded border-white placeholder-white bg-transparent w-full p-3 text-white  text-sm h-[120px]"
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.message}
