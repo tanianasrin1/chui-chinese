@@ -21,7 +21,7 @@ const HomeHero = () => {
             the readable content of a page when looking at its layout.
           </h6>
 
-          <Link href={"/"} className="w-full">
+          <Link href={"/our-menu"} className="w-full">
             <Button
               variant="contained"
               className="bg-secondary mx-auto lg:mx-0 hover:bg-secondary/90 w-full mt-10 lg:w-[210px] h-[70px] rounded-md rounded-t-[40px] text-lg capitalize font-semibold text-white"

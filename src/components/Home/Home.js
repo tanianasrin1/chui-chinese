@@ -3,6 +3,7 @@ import HomeHero from "./HomeHero";
 import Categories from "./Categories";
 import Location from "./Location";
 import Visite from "./Visite";
+import CustmerReview from "./CustmerReview";
 
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
     <HomeHero/>
     <Categories/>
     <Visite/>
+    <CustmerReview/>
     <Location/>
     </>
   );
