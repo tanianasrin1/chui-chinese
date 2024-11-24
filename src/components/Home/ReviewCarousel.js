@@ -30,7 +30,7 @@ const ReviewCarousel = ({ googleReview }) => {
       slidesPerView={count}
       pagination={{ clickable: true }}
       autoplay={{ delay: 4000 }}
-      className=" lg:h-[550px] md:h-[380px] h-[260px]"
+      className=" lg:h-[380px] md:h-[380px] h-[260px]"
     >
       <>
         {/* { googleReview?.data?.length > 0 && googleReview?.data?.map(
