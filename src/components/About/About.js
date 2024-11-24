@@ -2,6 +2,8 @@ import React from 'react';
 import AboutBanner from './AboutBanner';
 import AboutContent from './AboutContent';
 import AboutStrengt from './AboutStrengt';
+import AboutChui from './AboutChui';
+import AboutChines from './AboutChines';
 
 const About = () => {
     return (
@@ -10,6 +12,8 @@ const About = () => {
             <AboutBanner/>
             <AboutContent/>
             <AboutStrengt/> 
+            <AboutChui/>
+            <AboutChines/>
             
         </div>
     );
