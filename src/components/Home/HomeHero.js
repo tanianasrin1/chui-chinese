@@ -14,7 +14,7 @@ const HomeHero = () => {
 
         <div className="w-full  flex flex-col items-start gap-5  lg:my-auto">
           <h1 className="break-all font-black text-center lg:text-start text-3xl md:text-[72px] md:leading-[80px] text-black ">
-             Test
+            Test
           </h1>
           <h6 className="font-semibold text-base md:text-lg lg:text-xl text-center lg:text-start">
             It is a long established fact that a reader will be distracted by
@@ -22,12 +22,15 @@ const HomeHero = () => {
           </h6>
 
           <Link href={"/our-menu"} className="w-full">
-            <Button
+            <button className="bg-secondary mx-auto lg:mx-0 hover:bg-secondary/90 w-full mt-10 lg:w-[210px] h-[70px] rounded-md rounded-t-[40px] text-lg capitalize font-semibold text-white">
+              Order Online
+            </button>
+            {/* <Button
               variant="contained"
               className="bg-secondary mx-auto lg:mx-0 hover:bg-secondary/90 w-full mt-10 lg:w-[210px] h-[70px] rounded-md rounded-t-[40px] text-lg capitalize font-semibold text-white"
             >
               Order Online
-            </Button>
+            </Button> */}
           </Link>
         </div>
       </div>
