@@ -9,7 +9,7 @@ const NavLinkMob = ({ toggleDrawer }) => {
   const router = useRouter();
 
   return (
-    <div className="font-Barlow text-base leading-5 tracking-[1%] p-6">
+    <div className="font-Barlow text-base leading-5 tracking-[1%] p-6 space-y-3">
       <IoCloseSharp
         className="lg:hidden block  w-10 ml-auto "
         onClick={toggleDrawer}
@@ -20,7 +20,7 @@ const NavLinkMob = ({ toggleDrawer }) => {
           <button
             className={`w-max ${
               router.pathname == "/" && "font-bold"
-            } text-secondary text-sm lg:text-base   capitalize`}
+            } text-secondary lg:text-base hover:text-primary hover:font-semibold   capitalize`}
           >
             Home
           </button>
@@ -31,7 +31,7 @@ const NavLinkMob = ({ toggleDrawer }) => {
           <button
             className={`w-max ${
               router.pathname == "/about" && "font-bold"
-            } text-secondary text-sm lg:text-base   capitalize`}
+            } text-secondary lg:text-base hover:text-primary hover:font-semibold   capitalize`}
           >
             About Us
           </button>
@@ -41,8 +41,8 @@ const NavLinkMob = ({ toggleDrawer }) => {
         <Link href="/our-menu">
           <button
             className={`w-max ${
-              router.pathname == "/our-menu" && "font-bold"
-            } text-secondary text-sm lg:text-base   capitalize`}
+              router.pathname == "/our-menu" && "font-bold hover:text-primary hover:font-semibold"
+            } text-secondary lg:text-base    capitalize`}
           >
             Our Menu
           </button>
@@ -53,7 +53,7 @@ const NavLinkMob = ({ toggleDrawer }) => {
           <button
             className={`w-max ${
               router.pathname == "/offer" && "font-bold"
-            } text-secondary text-sm lg:text-base   capitalize`}
+            } text-secondary lg:text-base hover:text-primary hover:font-semibold   capitalize`}
           >
             Offer
           </button>
@@ -64,7 +64,7 @@ const NavLinkMob = ({ toggleDrawer }) => {
           <button
             className={`w-max ${
               router.pathname == "/contact-us" && "font-bold"
-            } text-secondary text-sm lg:text-base   capitalize`}
+            } text-secondary lg:text-base hover:text-primary hover:font-semibold   capitalize`}
           >
             Contact Us
           </button>

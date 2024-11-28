@@ -94,6 +94,20 @@ const ContactForm = () => {
                   {errors.message && touched.message && errors.message}
                 </p>
               </div>
+              <div className="w-full">
+                <input
+                  type="text"
+                  className="outline-none border-[1px] rounded border-white bg-transparent placeholder-white w-full p-3 text-white  text-sm "
+                  placeholder="Phone number"
+                  name="phone"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.phone}
+                />
+                <p className="text-xs ml-3 text-red-700 mt-1">
+                  {errors.message && touched.message && errors.message}
+                </p>
+              </div>
 
               <div className="w-full">
                 <input
@@ -105,9 +119,9 @@ const ContactForm = () => {
                   onBlur={handleBlur}
                   value={values.email}
                 />
-                <p className="text-xs ml-3 text-red-700 mt-1">
+                {/* <p className="text-xs ml-3 text-red-700 mt-1">
                   {errors.message && touched.message && errors.message}
-                </p>
+                </p> */}
               </div>
 
               <div className="w-full">
