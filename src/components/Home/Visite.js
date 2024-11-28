@@ -1,4 +1,3 @@
-import { Button } from "@mui/material";
 import Link from "next/link";
 import React from "react";
 
@@ -13,9 +12,9 @@ const Visite = () => {
           Book a table even right now or make an online order!
         </p>
         <Link href="/contact-us" className="">
-          <Button className="text-white text-xl font-semibold capitalize px-20 py-5 rounded rounded-t-[40px] overflow-hidden bg-secondary hover:bg-primary">
+          <button className="text-white text-xl font-semibold capitalize px-20 py-5 rounded rounded-t-[40px] overflow-hidden bg-secondary hover:bg-primary">
             Contact Us
-          </Button>
+          </button>
         </Link>
       </div>
     </div>

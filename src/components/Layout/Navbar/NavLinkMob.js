@@ -3,7 +3,6 @@ import { usePathname } from "next/navigation";
 import React from "react";
 import { IoCloseSharp } from "react-icons/io5";
 import { useRouter } from "next/router";
-import { Button } from "@mui/material";
 
 const NavLinkMob = ({ toggleDrawer }) => {
   const pathname = usePathname();
@@ -18,57 +17,57 @@ const NavLinkMob = ({ toggleDrawer }) => {
       {/* border-b border-gray/75 */}
       <div>
         <Link href="/">
-          <Button
+          <button
             className={`w-max ${
               router.pathname == "/" && "font-bold"
             } text-secondary text-sm lg:text-base   capitalize`}
           >
             Home
-          </Button>
+          </button>
         </Link>
       </div>
       <div>
         <Link href="/about">
-          <Button
+          <button
             className={`w-max ${
               router.pathname == "/about" && "font-bold"
             } text-secondary text-sm lg:text-base   capitalize`}
           >
             About Us
-          </Button>
+          </button>
         </Link>
       </div>
       <div>
         <Link href="/our-menu">
-          <Button
+          <button
             className={`w-max ${
               router.pathname == "/our-menu" && "font-bold"
             } text-secondary text-sm lg:text-base   capitalize`}
           >
             Our Menu
-          </Button>
+          </button>
         </Link>
       </div>
       <div>
         <Link href="/offer">
-          <Button
+          <button
             className={`w-max ${
               router.pathname == "/offer" && "font-bold"
             } text-secondary text-sm lg:text-base   capitalize`}
           >
             Offer
-          </Button>
+          </button>
         </Link>
       </div>
       <div>
         <Link href="/contact-us">
-          <Button
+          <button
             className={`w-max ${
               router.pathname == "/contact-us" && "font-bold"
             } text-secondary text-sm lg:text-base   capitalize`}
           >
             Contact Us
-          </Button>
+          </button>
         </Link>
       </div>
     </div>
