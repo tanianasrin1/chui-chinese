@@ -5,7 +5,7 @@ import AoS from "../AoS/AoS";
 const AboutChines = () => {
   return (
     <div className="lg:py-16 py-10 bg-gray-bg">
-      <div className="container-sk flex lg:flex-row flex-col gap-10 items-center">
+      <div className="container-sk flex lg:flex-row flex-col-reverse gap-10 items-center">
         <div className="w-full lg:w-1/2">
           <AoS animation="flip-right">
             <div>
