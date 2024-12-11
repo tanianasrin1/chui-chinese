@@ -7,11 +7,11 @@ const Visite = () => {
     <div className="w-full bg-[url('/images/banner-bg.png')] bg-cover bg-center m-0">
       <div className="d-container flex flex-col items-center justify-center py-16 gap-6">
         <AoS animation="fade-up">
-        <div>
-          <h2 className="text-black font-black text-4xl md:text-[48px] md:leading-[80px] text-center">
+        <div className="container-sk">
+          <h2 className="text-black font-black text-3xl md:text-[48px] md:leading-[80px] text-center">
             WOULD YOU LIKE TO CONTACT US?
           </h2>
-          <p className="text-center  text-base">
+          <p className="text-center  text-base mt-3 lg:mt-0">
             Book a table even right now or make an online order!
           </p>
         </div>
