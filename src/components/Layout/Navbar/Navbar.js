@@ -18,7 +18,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="bg-primary py-2 shadow-md">
+    <div className="bg-black py-2 shadow-md">
       <div className="container-sk flex items-center justify-between relative">
         <NavLogo />
         <Links />

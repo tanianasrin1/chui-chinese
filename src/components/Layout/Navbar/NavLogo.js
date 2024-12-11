@@ -11,7 +11,8 @@ const NavLogo = () => {
           <Image
             placeholder="blur"
             // src={siteSettings?.data?.logo}
-            src="/images/Logo-02.jpg"
+            // src="/images/Logo-02.jpg"
+            src="/images/logopng.png"
             width={100}
             height={80}
             alt="logo"
