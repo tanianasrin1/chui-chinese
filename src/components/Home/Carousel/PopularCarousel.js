@@ -32,7 +32,7 @@ const PopularCarousel = () => {
         // pagination={{ clickable: true }}
         // dotListClassName="custom-dot-list-style"
         autoplay={{ delay: 3000 }}
-        className=" lg:h-[400px] md:h-[200px] h-[180px] lg:my-10 my-6"
+        className=" lg:h-[400px] md:h-[200px] h-[230px] lg:my-10 my-3"
       >
         <>
           <SwiperSlide>
