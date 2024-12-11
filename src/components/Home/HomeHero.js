@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@mui/material";
 import Link from "next/link";
 import PopularCarousel from "./Carousel/PopularCarousel";
+import AoS from "../AoS/AoS";
 
 const HomeHero = () => {
   return (
@@ -13,20 +14,24 @@ const HomeHero = () => {
         </div>
 
         <div className="w-full  flex flex-col items-start gap-5  lg:my-auto">
-          <h1 className="break-all font-black text-center lg:text-start text-3xl md:text-[72px] md:leading-[80px] text-black ">
-            Test
-          </h1>
-          <h6 className="font-semibold text-base md:text-lg lg:text-xl text-center lg:text-start">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
-          </h6>
+          <AoS animation="fade-left">
+          <div>
+            <h1 className="break-all font-black text-center lg:text-start text-3xl md:text-[72px] md:leading-[80px] text-black ">
+              Test
+            </h1>
+            <h6 className="font-semibold text-base md:text-lg lg:text-xl text-center lg:text-start">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </h6>
 
-          <Link href={"/our-menu"} className="w-full">
-            <button className="bg-secondary mx-auto lg:mx-0 hover:bg-secondary/90 w-full mt-10 lg:w-[210px] h-[70px] rounded-md rounded-t-[40px] text-lg capitalize font-semibold text-white">
-              Order Online
-            </button>
-            
-          </Link>
+            <Link href={"/our-menu"} className="w-full">
+              <button className="bg-secondary mx-auto lg:mx-0 hover:bg-secondary/90 w-full mt-10 lg:w-[210px] h-[70px] rounded-md rounded-t-[40px] text-lg capitalize font-semibold text-white">
+                Order Online
+              </button>
+            </Link>
+          </div>
+          </AoS>
+          
         </div>
       </div>
     </div>
