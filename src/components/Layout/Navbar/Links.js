@@ -51,80 +51,80 @@ const Links = () => {
         </div>
 
         <div className="w-[190px] absolute hidden bg-primary   text-black p-4  group-hover:flex flex-col  space-y-3 pt-4 shadow-2xl">
-          <Link href="/our-menu">
+          <Link href="/our-menu/slug">
             <p className="hover:text-secondary cursor-pointer  hover:font-semibold duration-300 ">
               {" "}
               Burger
             </p>
           </Link>
-          <Link href="/our-menu">
+          <Link href="/our-menu/slug">
             <p className="hover:text-secondary cursor-pointer  hover:font-semibold duration-300 ">
               {" "}
               Sandwich
             </p>
           </Link>
-          <Link href="/our-menu">
+          <Link href="/our-menu/slug">
             <p className="hover:text-secondary cursor-pointer  hover:font-semibold duration-300 ">
               {" "}
               MOMO
             </p>
           </Link>
-          <Link href="/our-menu">
+          <Link href="/our-menu/slug">
             <p className="hover:text-secondary cursor-pointer  hover:font-semibold duration-300 ">
               {" "}
               Chowmein
             </p>
           </Link>
-          <Link href="/our-menu">
+          <Link href="/our-menu/slug">
             <p className="hover:text-secondary cursor-pointer  hover:font-semibold duration-300 ">
               {" "}
               Fries
             </p>
           </Link>
-          <Link href="/our-menu">
+          <Link href="/our-menu/slug">
             <p className="hover:text-secondary cursor-pointer  hover:font-semibold duration-300 ">
               {" "}
               Mushroom
             </p>
           </Link>
-          <Link href="/our-menu">
+          <Link href="/our-menu/slug">
             <p className="hover:text-secondary cursor-pointer  hover:font-semibold duration-300 ">
               {" "}
               Soup
             </p>
           </Link>
-          <Link href="/our-menu">
+          <Link href="/our-menu/slug">
             <p className="hover:text-secondary cursor-pointer  hover:font-semibold duration-300 ">
               {" "}
               Milk Shakes
             </p>
           </Link>
-          <Link href="/our-menu">
+          <Link href="/our-menu/slug">
             <p className="hover:text-secondary cursor-pointer  hover:font-semibold duration-300 ">
               {" "}
               MOJITO
             </p>
           </Link>
          
-          <Link href="/our-menu">
+          <Link href="/our-menu/slug">
             <p className="hover:text-secondary cursor-pointer  hover:font-semibold duration-300 ">
               {" "}
               Fruits Juice
             </p>
           </Link>
-          <Link href="/our-menu">
+          <Link href="/our-menu/slug">
             <p className="hover:text-secondary cursor-pointer  hover:font-semibold duration-300 ">
               {" "}
               Hot & Cold Coffee
             </p>
           </Link>
-          <Link href="/our-menu">
+          <Link href="/our-menu/slug">
             <p className="hover:text-secondary cursor-pointer  hover:font-semibold duration-300 ">
               {" "}
               Ice Tea
             </p>
           </Link>
-          <Link href="/our-menu">
+          <Link href="/our-menu/slug">
             <p className="hover:text-secondary cursor-pointer  hover:font-semibold duration-300 ">
               {" "}
               Dessert

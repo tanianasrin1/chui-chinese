@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout/Layout";
-import OurMenu from "@/components/OurMenu/OurMenu";
+// import OurMenu from "@/components/OurMenu/OurMenu";
+import Project from "@/components/Project/Project";
 import Head from "next/head";
 import React from "react";
 
@@ -11,7 +12,8 @@ const index = () => {
         <link rel="icon" href={siteSetting?.data?.favicon} /> */}
       </Head>
       <Layout>
-        <OurMenu/>
+        {/* <OurMenu/> */}
+        <Project/>
       </Layout>
     </>
   );
