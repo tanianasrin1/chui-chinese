@@ -23,7 +23,7 @@ const AboutChines = () => {
         <div className="w-full lg:w-1/2">
           <AoS animation="fade-left">
             <div>
-              <h1 className="lg:text-[36px] lg:leading-[60px] md:text-3xl text-2xl font-bold text-black">
+              <h1 className="lg:text-[36px]  md:text-3xl text-2xl font-bold text-black uppercase">
                 Set Menu
               </h1>
               <p className="text-base mt-2">

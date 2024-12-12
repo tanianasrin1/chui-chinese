@@ -9,7 +9,7 @@ const AboutChui = () => {
         <div className="w-full lg:w-1/2">
           <AoS animation="fade-right">
             <div>
-              <h1 className="lg:text-[36px] lg:leading-[60px] md:text-3xl text-2xl font-bold text-black">
+              <h1 className="lg:text-[36px] md:text-3xl text-2xl font-bold text-black uppercase">
                 Chui
               </h1>
               <p className="text-base mt-2">
