@@ -32,8 +32,8 @@ const Categories = () => {
   }, [windowSize]);
 
   return (
-    <section className="bg-white">
-      <div className="container-sk  py-8 lg:py-16">
+    <section className="bg-white py-8 lg:py-16 ">
+      <div className="container-sk  ">
         
         <Swiper
           // install Swiper modules
@@ -43,119 +43,144 @@ const Categories = () => {
         //   pagination={{ clickable: true }}
           autoplay={{ delay: 2000 }}
         >
-          <div className="w-full grid grid-cols-2 gap-2 text-center lg:grid-cols-5">
-            <SwiperSlide tag="li" className="w-full">
+          <div className="w-full  ">
+            <SwiperSlide tag="li" className="w-full  ">
               <Link href="/our-menu/slug">
-                <Image
-                  className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full"
+               <div className="flex justify-center">
+               <Image
+                  className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full "
                   src="/images/Logo-02.jpg"
                   width={200}
                   height={100}
                   alt="logo"
                 />
-                <p className="text-sm lg:text-base  text-secondary mt-3">Chicken Wings
+               </div>
+
+                <p className="text-sm lg:text-base text-center text-secondary mt-3">Chicken Wings
                 </p>
                 
               </Link>
             </SwiperSlide>
-            <SwiperSlide tag="li" className="w-full">
+            <SwiperSlide tag="li" className="w-full  ">
               <Link href="/our-menu/slug">
-                <Image
-                  className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full"
+               <div className="flex justify-center">
+               <Image
+                  className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full "
                   src="/images/Logo-02.jpg"
                   width={200}
                   height={100}
                   alt="logo"
                 />
-                <p className="text-sm lg:text-base  text-secondary mt-3">Chicken Wings
+               </div>
+
+                <p className="text-sm lg:text-base text-center text-secondary mt-3">Chicken Wings
                 </p>
                 
               </Link>
             </SwiperSlide>
-            <SwiperSlide tag="li" className="w-full">
+            <SwiperSlide tag="li" className="w-full  ">
               <Link href="/our-menu/slug">
-                <Image
-                  className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full"
+               <div className="flex justify-center">
+               <Image
+                  className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full "
                   src="/images/Logo-02.jpg"
                   width={200}
                   height={100}
                   alt="logo"
                 />
-                <p className="text-sm lg:text-base  text-secondary mt-3">Chicken Wings
+               </div>
+
+                <p className="text-sm lg:text-base text-center text-secondary mt-3">Chicken Wings
                 </p>
                 
               </Link>
             </SwiperSlide>
-            <SwiperSlide tag="li" className="w-full">
+            <SwiperSlide tag="li" className="w-full  ">
               <Link href="/our-menu/slug">
-                <Image
-                  className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full"
+               <div className="flex justify-center">
+               <Image
+                  className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full "
                   src="/images/Logo-02.jpg"
                   width={200}
                   height={100}
                   alt="logo"
                 />
-                <p className="text-sm lg:text-base  text-secondary mt-3">Chicken Wings
+               </div>
+
+                <p className="text-sm lg:text-base text-center text-secondary mt-3">Chicken Wings
                 </p>
                 
               </Link>
             </SwiperSlide>
-            <SwiperSlide tag="li" className="w-full">
+            <SwiperSlide tag="li" className="w-full  ">
               <Link href="/our-menu/slug">
-                <Image
-                  className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full"
+               <div className="flex justify-center">
+               <Image
+                  className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full "
                   src="/images/Logo-02.jpg"
                   width={200}
                   height={100}
                   alt="logo"
                 />
-                <p className="text-sm lg:text-base  text-secondary mt-3">Chicken Wings
+               </div>
+
+                <p className="text-sm lg:text-base text-center text-secondary mt-3">Chicken Wings
                 </p>
                 
               </Link>
             </SwiperSlide>
-            <SwiperSlide tag="li" className="w-full">
+            <SwiperSlide tag="li" className="w-full  ">
               <Link href="/our-menu/slug">
-                <Image
-                  className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full"
+               <div className="flex justify-center">
+               <Image
+                  className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full "
                   src="/images/Logo-02.jpg"
                   width={200}
                   height={100}
                   alt="logo"
                 />
-                <p className="text-sm lg:text-base  text-secondary mt-3">Chicken Wings
+               </div>
+
+                <p className="text-sm lg:text-base text-center text-secondary mt-3">Chicken Wings
                 </p>
                 
               </Link>
             </SwiperSlide>
-            <SwiperSlide tag="li" className="w-full">
+            <SwiperSlide tag="li" className="w-full  ">
               <Link href="/our-menu/slug">
-                <Image
-                  className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full"
+               <div className="flex justify-center">
+               <Image
+                  className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full "
                   src="/images/Logo-02.jpg"
                   width={200}
                   height={100}
                   alt="logo"
                 />
-                <p className="text-sm lg:text-base  text-secondary mt-3">Chicken Wings
+               </div>
+
+                <p className="text-sm lg:text-base text-center text-secondary mt-3">Chicken Wings
                 </p>
                 
               </Link>
             </SwiperSlide>
-            <SwiperSlide tag="li" className="w-full">
+            <SwiperSlide tag="li" className="w-full  ">
               <Link href="/our-menu/slug">
-                <Image
-                  className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full"
+               <div className="flex justify-center">
+               <Image
+                  className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full "
                   src="/images/Logo-02.jpg"
                   width={200}
                   height={100}
                   alt="logo"
                 />
-                <p className="text-sm lg:text-base  text-secondary mt-3">Chicken Wings
+               </div>
+
+                <p className="text-sm lg:text-base text-center text-secondary mt-3">Chicken Wings
                 </p>
                 
               </Link>
             </SwiperSlide>
+            
             
           </div>
         </Swiper>

@@ -5,7 +5,7 @@ const AboutStrengt = () => {
   return (
     <div className="lg:py-16 py-10 bg-gray-bg">
       <div className="container-sk">
-        <p className="text-black font-black text-2xl md:text-3xl lg:text-4xl  text-center uppercase">
+        <p className="text-black font-black text-2xl md:text-3xl lg:text-[48px] mb-10  text-center uppercase">
           Our Strength
         </p>
 

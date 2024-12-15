@@ -16,12 +16,12 @@ const Visite = () => {
           </p>
         </div>
         </AoS>
-        
-        <Link href="/contact-us" className="">
-          <button className="text-white text-xl font-semibold capitalize px-20 py-5 rounded rounded-t-[40px] overflow-hidden bg-secondary hover:bg-secondary/90">
-            Contact Us
-          </button>
-        </Link>
+       
+        <Link href={"/contact-us"} className=" flex lg:justify-start justify-center">
+              <button className="bg-secondary  hover:bg-secondary/90  px-10 py-3 mt-0  rounded text-lg capitalize font-semibold text-white">
+              Contact Us
+              </button>
+            </Link>
       </div>
     </div>
   );

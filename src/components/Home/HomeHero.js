@@ -24,8 +24,8 @@ const HomeHero = () => {
               the readable content of a page when looking at its layout.
             </h6>
 
-            <Link href={"/our-menu"} className="w-full ">
-              <button className="bg-secondary mx-auto lg:mx-0  hover:bg-secondary/90 w-full mt-10 lg:w-[210px] h-[70px] rounded-md rounded-t-[40px] text-lg capitalize font-semibold text-white">
+            <Link href={"/our-menu"} className=" flex lg:justify-start justify-center">
+              <button className="bg-secondary  hover:bg-secondary/90  px-10 py-3 mt-10  rounded text-lg capitalize font-semibold text-white">
                 Order Online
               </button>
             </Link>

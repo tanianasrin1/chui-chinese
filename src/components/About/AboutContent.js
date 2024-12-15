@@ -9,10 +9,10 @@ const AboutContent = () => {
         <div className="w-full lg:w-1/2">
           <AoS animation="fade-right">
             <div>
-              <h1 className="lg:text-4xl  md:text-3xl text-2xl font-bold text-black uppercase">
+              <h1 className="lg:text-4xl  md:text-3xl text-2xl font-bold text-black uppercase lg:text-left text-center">
                 About Us
               </h1>
-              <p className="text-base mt-2">
+              <p className="text-base mt-4">
                 It has survived not only five centuries, but also the leap into
                 electronic typesetting, remaining essentially unchanged.{" "}
               </p>

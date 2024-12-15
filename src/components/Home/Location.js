@@ -4,7 +4,7 @@ const Location = () => {
   return (
     <div className="my-12">
       <div className="container-sk">
-        <h6 className="text-black font-black text-4xl md:text-[48px] md:leading-[80px] text-center">
+        <h6 className="text-black font-black text-4xl md:text-[48px] md:leading-[80px] text-center uppercase">
           Locate Us
         </h6>
 
