@@ -6,9 +6,9 @@ import { SlLocationPin } from "react-icons/sl";
 
 const ContactContent = () => { 
   return (
-    <div className="lg:py-20 md:py-16 py-10 lg:mt-10 mt-8">
+    <div className="lg:py-20 md:py-16 py-10 lg:mt-16 mt-8">
       <div className="container-sk">
-        <p className="lg:text-4xl md:text-3xl text-2xl font-bold text-center lg:mb-8 mb-6">
+        <p className="lg:text-4xl md:text-3xl text-2xl uppercase font-bold text-center lg:mb-8 mb-6">
           Contact Us
         </p>
 
