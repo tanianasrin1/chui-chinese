@@ -9,6 +9,8 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Swiper, SwiperSlide } from "swiper/react";
 import useWindowSize from "@/hooks/useWindowSize";
+import Link from "next/link";
+
 
 const Categories = () => {
   // console.log('Eva', resData);
@@ -43,7 +45,7 @@ const Categories = () => {
         >
           <div className="w-full grid grid-cols-2 gap-2 text-center lg:grid-cols-5">
             <SwiperSlide tag="li" className="w-full">
-              <>
+              <Link href="/our-menu/slug">
                 <Image
                   className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full"
                   src="/images/Logo-02.jpg"
@@ -53,10 +55,11 @@ const Categories = () => {
                 />
                 <p className="text-sm lg:text-base  text-secondary mt-3">Chicken Wings
                 </p>
-              </>
+                
+              </Link>
             </SwiperSlide>
             <SwiperSlide tag="li" className="w-full">
-              <>
+              <Link href="/our-menu/slug">
                 <Image
                   className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full"
                   src="/images/Logo-02.jpg"
@@ -66,10 +69,11 @@ const Categories = () => {
                 />
                 <p className="text-sm lg:text-base  text-secondary mt-3">Chicken Wings
                 </p>
-              </>
+                
+              </Link>
             </SwiperSlide>
             <SwiperSlide tag="li" className="w-full">
-              <>
+              <Link href="/our-menu/slug">
                 <Image
                   className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full"
                   src="/images/Logo-02.jpg"
@@ -79,10 +83,11 @@ const Categories = () => {
                 />
                 <p className="text-sm lg:text-base  text-secondary mt-3">Chicken Wings
                 </p>
-              </>
+                
+              </Link>
             </SwiperSlide>
             <SwiperSlide tag="li" className="w-full">
-              <>
+              <Link href="/our-menu/slug">
                 <Image
                   className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full"
                   src="/images/Logo-02.jpg"
@@ -92,10 +97,11 @@ const Categories = () => {
                 />
                 <p className="text-sm lg:text-base  text-secondary mt-3">Chicken Wings
                 </p>
-              </>
+                
+              </Link>
             </SwiperSlide>
             <SwiperSlide tag="li" className="w-full">
-              <>
+              <Link href="/our-menu/slug">
                 <Image
                   className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full"
                   src="/images/Logo-02.jpg"
@@ -105,10 +111,11 @@ const Categories = () => {
                 />
                 <p className="text-sm lg:text-base  text-secondary mt-3">Chicken Wings
                 </p>
-              </>
+                
+              </Link>
             </SwiperSlide>
             <SwiperSlide tag="li" className="w-full">
-              <>
+              <Link href="/our-menu/slug">
                 <Image
                   className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full"
                   src="/images/Logo-02.jpg"
@@ -118,10 +125,11 @@ const Categories = () => {
                 />
                 <p className="text-sm lg:text-base  text-secondary mt-3">Chicken Wings
                 </p>
-              </>
+                
+              </Link>
             </SwiperSlide>
             <SwiperSlide tag="li" className="w-full">
-              <>
+              <Link href="/our-menu/slug">
                 <Image
                   className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full"
                   src="/images/Logo-02.jpg"
@@ -131,10 +139,11 @@ const Categories = () => {
                 />
                 <p className="text-sm lg:text-base  text-secondary mt-3">Chicken Wings
                 </p>
-              </>
+                
+              </Link>
             </SwiperSlide>
             <SwiperSlide tag="li" className="w-full">
-              <>
+              <Link href="/our-menu/slug">
                 <Image
                   className="object-cover lg:h-24 lg:w-24 h-16 w-16 rounded-full"
                   src="/images/Logo-02.jpg"
@@ -144,8 +153,10 @@ const Categories = () => {
                 />
                 <p className="text-sm lg:text-base  text-secondary mt-3">Chicken Wings
                 </p>
-              </>
+                
+              </Link>
             </SwiperSlide>
+            
           </div>
         </Swiper>
       </div>
