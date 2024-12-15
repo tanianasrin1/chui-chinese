@@ -5,7 +5,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-// import useWindowSize from "@/hook/useWindowSize";
 import ReviewSlider from "./ReviewSlider";
 import useWindowSize from "@/hooks/useWindowSize";
 
@@ -30,20 +29,10 @@ const ReviewCarousel = ({ googleReview }) => {
       slidesPerView={count}
       pagination={{ clickable: true }}
       autoplay={{ delay: 4000 }}
-      className=" lg:h-[380px] md:h-[380px] h-[350px]"
+      className=" lg:h-[380px] md:h-[380px] h-[350px] my-swiper"
     >
       <>
-        {/* { googleReview?.data?.length > 0 && googleReview?.data?.map(
-          (item, index) =>
-             (
-              <>
-                <SwiperSlide>
-                  <ReviewSlider key={index} data={item} />
-                </SwiperSlide>
-              </>
-            )
-        )} */}
-
+       
         <SwiperSlide>
           <ReviewSlider/>
         </SwiperSlide>

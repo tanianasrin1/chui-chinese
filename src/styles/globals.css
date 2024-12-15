@@ -148,3 +148,16 @@ body::-webkit-scrollbar-thumb {
   background-clip: content-box;
   @apply bg-primary;
 }
+
+/* dot color */
+/* Style all bullets with default yellow color */
+/* Make all bullets red by default */
+.my-swiper .swiper-pagination-bullet {
+  background-color: black !important;
+}
+
+/* Style the active bullet differently */
+.my-swiper .swiper-pagination-bullet-active {
+  background-color: #ffd700 !important; /* Gold */
+}
+
