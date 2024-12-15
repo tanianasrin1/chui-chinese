@@ -113,6 +113,10 @@ body {
   
 }
 
+/* #nprogress .bar {
+  background: #fdd201 !important;
+  z-index: 5000 !important;
+} */
   
 /* modifying carousel classes globally  */
 

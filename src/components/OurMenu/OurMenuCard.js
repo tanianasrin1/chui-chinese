@@ -7,7 +7,7 @@ const OurMenuCard = () => {
     <>
       <div className="lg:py-12 py-10">
         <div className="container-sk">
-          <h6 className="text-black font-black text-3xl md:text-4xl uppercase  text-center">
+          <h6 className="text-black font-black text-3xl md:text-[48px] uppercase lg:mb-10 text-center">
             Sandwich
           </h6>
           <AoS animation="fade-up">

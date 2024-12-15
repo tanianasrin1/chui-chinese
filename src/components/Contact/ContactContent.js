@@ -3,6 +3,7 @@ import ContactForm from "./ContactForm";
 import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineMail } from "react-icons/md";
 import { SlLocationPin } from "react-icons/sl";
+import AoS from "../AoS/AoS";
 
 const ContactContent = () => { 
   return (
@@ -16,6 +17,7 @@ const ContactContent = () => {
           <div className="lg:w-1/2 w-full">
             <ContactForm />
           </div>
+          <AoS animation="fade-left">
           <div className="lg:w-1/2 w-full">
             <div className="">
               <p className=" text-secondary  lg:text-3xl md:text-2xl text-xl font-bold">
@@ -72,6 +74,7 @@ const ContactContent = () => {
               </div>
             </div>
           </div>
+          </AoS>
         </div>
       </div>
     </div>
