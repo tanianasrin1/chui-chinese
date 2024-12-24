@@ -58,13 +58,13 @@ const FooterDetails = () => {
       <div>
         <h6 className="flex items-center justify-start gap-4 text-base font-semibold text-black-primary">
           <IconButton className=" text-secondary ">
-            <MdPhoneInTalk className="text-2xl text-black-secondary " />
+            <MdPhoneInTalk className="text-2xl text-black " />
           </IconButton>
           <a href={`tel:01728585985`}>01728585985</a>
         </h6>
         <h6 className="flex items-center justify-start gap-4 text-base font-semibold text-black-primary">
           <IconButton className=" text-secondary ">
-            <IoMailSharp className="text-2xl text-black-secondary " />{" "}
+            <IoMailSharp className="text-2xl text-black " />{" "}
           </IconButton>
           <a href={`mailto: chui.chinese85@gmail.com`}>
           chui.chinese85@gmail.com
