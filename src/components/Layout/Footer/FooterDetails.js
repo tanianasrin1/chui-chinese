@@ -66,8 +66,8 @@ const FooterDetails = () => {
           <IconButton className=" text-secondary ">
             <IoMailSharp className="text-2xl text-black-secondary " />{" "}
           </IconButton>
-          <a href={`mailto: chuichinese&gmail.com`}>
-          chuichinese&gmail.com
+          <a href={`mailto: chui.chinese85@gmail.com`}>
+          chui.chinese85@gmail.com
           </a>
           
           {/* {Restaurant?.email} */}
