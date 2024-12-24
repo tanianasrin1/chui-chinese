@@ -25,9 +25,13 @@ const FooterLogo = ({ siteSetting }) => {
           advanced techniques. You ll leave our school with the knowledge and
           skills to be a safe and responsible driver.
         </p>
+          
 
+        <div className="w-10 h-10  bg-secondary/20 flex justify-center items-center rounded-full ">
+        <Link href="https://www.facebook.com/profile.php?id=61566990931265&mibextid=ZbWKwL" target="_blank"><FaFacebook className="text-2xl"/></Link>
+        </div>
         
-          <Link href="https://www.facebook.com/profile.php?id=61566990931265&mibextid=ZbWKwL" target="_blank"><FaFacebook /></Link>
+          
       
       </div>
 
